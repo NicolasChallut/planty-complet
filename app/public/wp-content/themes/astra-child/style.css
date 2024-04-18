@@ -14,12 +14,7 @@ Updated: 2024-02-01 11:07:01
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 /* Import de la font syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 
-@media screen and (max-width:960px)
-{
-  .colonnes p{
-    margin:30px 30px 0 30px !important;
-  }  
-}
+
 
 @media screen and (max-width:921px) {
 
@@ -47,10 +42,10 @@ Updated: 2024-02-01 11:07:01
     }
 
     .colonnes{
-        display: flex !important;
-        flex-flow:row wrap  !important;
-        height: auto !important;
-        justify-content: center !important;
+        display: flex !important ;
+        flex-flow:column  !important ;
+        height: auto ;
+        align-items: center !important;
     }
 
     .informations{
@@ -60,9 +55,13 @@ Updated: 2024-02-01 11:07:01
     }
 
     .informations p{
-        margin-bottom: 20px !important;
+        margin:30px 0 20px 0 !important;
     }
 
+    .livraison p, .livraison h2
+    {
+        margin-left: 0 !important;
+    }
    
 }
 
@@ -125,20 +124,44 @@ Updated: 2024-02-01 11:07:01
         
  }
 
-    
+   .mail{
+    margin-bottom: 20px;
+   } 
 
     .entete{
         font-size: medium !important;
     }
 
-    .colonnes input{
+    
+    .Hcommandez {
+        font-size: 22px !important;
+        margin: 0 !important;
+       } 
+    
+      .colonnes input ,.colonnes h2 {
         max-width: 320px;
         width: 100%;
-    }
+      } 
     
+      .contact p{
+        max-width: 320px !important;
+      }
+    
+      .message{
+        max-width: 320px;
+      }
+
+
+
+    .colonnes h2
+    {
+    max-width: 320px;
+    
+    }
+
 }
 
-@media screen and (max-width:320px)
+@media screen and (max-width:400px)
 /*smaller screen*/
 {
    .Hcommandez {
@@ -146,24 +169,35 @@ Updated: 2024-02-01 11:07:01
     margin: 0 !important;
    } 
 
-  .colonnes input ,.colonnes h2, .colonnes{
+  .colonnes input ,.colonnes h2
+   {
     max-width: 320px;
   } 
 
-  .colonnes p{
-    margin:0 !important;
-  }
+  
 
 
-  .contact p{
+  .contact p
+  {
     max-width: 320px !important;
   }
 
-  .message{
+  .message
+  {
     max-width: 320px;
   }
+
+.informations, .livraison
+{
+    max-width: 320px;
 }
 
+}
+
+
+
+
+/*end responcive queries*/
 
 
 /***Header***/
@@ -183,6 +217,8 @@ Updated: 2024-02-01 11:07:01
     padding-right:0 ;
     height: 80px;
 }
+
+
 /***END Header/***/
 
 
@@ -222,12 +258,12 @@ h1{
     border-bottom-left-radius: 40% 50px !important;
     border-bottom-right-radius: 40% 50px !important;
 }
-
+/*
 .energie-groupe{
     padding:20px 0 0 0 !important;
     background-color: #E3D9D0;   
 }
-
+*/
 .energie{
     background-color: #fff;
     display: flex;
@@ -239,14 +275,13 @@ h1{
     margin: 0px !important;
     
 }
-
+/*
 .canette{
     width: auto;
     height: 618px;
     background-color: transparent;
-
 }
-
+*/
 .avis{
     background-image: url(http://planty.local/wp-content/uploads/2024/02/Rectangle-6.png);
     background-repeat: no-repeat;
@@ -271,33 +306,7 @@ h1{
 /***END Home/***/
 
 
-/***'Nous rencontrez'***/ 
-input .wpcf7-form-control{
-    width: 383px;
-    margin: 0;   
-}
-
- input.wpcf7-form-control {
-    height: 55px;
-    width: 198px;
-}
-
-input.wpcf7-form-control{
-    border-radius: 7px;
-}
-
-.wpcf7-form-control{
-    border-radius: 7px;
-}
-
-figure.wp-block-image.size-full{
-    margin: 0px;
-}
-
-span.wpcf7-spinner{
-    width: 0;
-    margin:0;
-}
+/*******'Nous rencontrez'*******/ 
 
 
 
@@ -341,20 +350,37 @@ span.wpcf7-spinner{
     padding-bottom: 81px !important;   
 }
 
-.message{
-    background-repeat: no-repeat;
-    overflow: visible !important;
-    background-image: url(http://planty.local/wp-content/uploads/2024/03/Group-16.png);
-    background-size: 25%;
-    background-position: -5% 77%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    max-width: 460px;
-    width: 100%;
-    
-    
+/*formulaire contact*/
+input .wpcf7-form-control{
+    width: 383px;
+    margin: 0;   
 }
+
+ input.wpcf7-form-control {
+    height: 55px;
+    width: 198px;
+}
+
+input.wpcf7-form-control{
+    border-radius: 7px;
+}
+
+.wpcf7-form-control{
+    border-radius: 7px;
+}
+
+figure.wp-block-image.size-full{
+    margin: 0px;
+}
+
+span.wpcf7-spinner{
+    width: 0;
+    margin:0;
+}
+/*formulaire contact*/
+
+
+
 
 .bouton1 p{
     display: flex;
@@ -366,15 +392,24 @@ span.wpcf7-spinner{
     flex-flow: column wrap;
     align-items: center;
     color: black;
-    overflow: visible !important;
-    background-repeat: no-repeat;
-    background-position: 35% 90%;
-    
 }
 
 .contact p{
     max-width: 383px;
     width: 100%;
+}
+
+.message{
+    background-repeat: no-repeat;
+    overflow: visible !important;
+    background-image: url(http://planty.local/wp-content/uploads/2024/03/Group-16.png);
+    background-size: 25%;
+    background-position: -5% 77%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-width: 460px;
+    width: 100%;    
 }
 /***END 'Nous rencontrez'/***/ 
 
@@ -471,8 +506,12 @@ article.post-5616{
     margin: 30px 0 0 45px;
 }
 
-.colonnes h2{
+.livraison h2{
     margin-left: 45px;
+}
+
+.colonnes h2{
+    font-size: 30px;
 }
 
 .colonnes input{
