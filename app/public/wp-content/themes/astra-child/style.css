@@ -134,6 +134,32 @@ Updated: 2024-02-01 11:07:01
     
 }
 
+@media screen and (max-width:320px)
+/*smaller screen*/
+{
+   .Hcommandez {
+    font-size: 22px !important;
+    margin: 0 !important;
+   } 
+
+  .colonnes input ,.colonnes h2, .colonnes{
+    max-width: 320px;
+  } 
+
+  .colonnes p{
+    margin:0 !important;
+  }
+
+
+  .contact p{
+    max-width: 320px !important;
+  }
+
+  .message{
+    max-width: 320px;
+  }
+}
+
 
 
 /***Header***/
@@ -320,7 +346,8 @@ span.wpcf7-spinner{
     display: flex;
     flex-direction:column;
     align-items: center;
-    width: 460px;
+    max-width: 460px;
+    
     
 }
 
@@ -341,7 +368,7 @@ span.wpcf7-spinner{
 }
 
 .contact p{
-    width: 383px;
+    max-width: 383px;
 }
 /***END 'Nous rencontrez'/***/ 
 
@@ -356,6 +383,10 @@ span.wpcf7-spinner{
 
 article.post-5616{
     padding: 0px !important;
+}
+
+.Hcommandez{
+    margin: 0 !important;
 }
 
 .votre{
@@ -415,6 +446,7 @@ article.post-5616{
 
 #colonnes{
     max-width: 860px;
+    width: 100%;
 }
 
 .colonnes{
@@ -435,7 +467,8 @@ article.post-5616{
 
 .colonnes input{
     height: 71px;
-    width: 383px !important;
+    max-width: 383px !important;
+    width: 100%;
 }
 
 .informations{
@@ -444,6 +477,7 @@ article.post-5616{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 100%;
 
 }
 
@@ -452,6 +486,7 @@ article.post-5616{
     flex-direction: column;
     justify-content: flex-end;
     height: 447px;
+    width: 100%;
 }
 
 .bouton {
