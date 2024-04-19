@@ -15,7 +15,7 @@
                  </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-<div class="wrap">Mentions légales
+<div class="wrap"><a href="">Mentions légales</a>
 
 </div><!-- .wrap -->
 

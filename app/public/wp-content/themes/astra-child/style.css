@@ -201,21 +201,34 @@ Updated: 2024-02-01 11:07:01
 
 
 /***Header***/
-#ast-hf-menu-2 a.menu-link{    
+#ast-hf-menu-2 a{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 236px;   
     height: 80px;
-    padding-top: 15px;
+}
 
+#menu-item-6023{
+    margin: 0;
 }
 
 .ast-desktop .ast-primary-header-bar.main-header-bar {
     padding:0 ;
 }
 
-
+.main-navigation li{
+    margin-right: 60px;
+    padding: 0 !important;
+}
 
 #masthead .ast-container {
     padding-right:0 ;
     height: 80px;
+}
+
+#menu-item-5996 a{
+    padding: 0;
 }
 
 
