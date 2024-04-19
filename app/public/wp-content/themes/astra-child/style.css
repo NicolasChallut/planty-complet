@@ -201,6 +201,9 @@ Updated: 2024-02-01 11:07:01
 
 
 /***Header***/
+
+
+
 #ast-hf-menu-2 a{ 
     display: flex;
     align-items: center;
@@ -229,6 +232,7 @@ Updated: 2024-02-01 11:07:01
 
 #menu-item-5996 a{
     padding: 0;
+    font-weight: 700;
 }
 
 
@@ -245,7 +249,7 @@ h1{
 .drink{
     background-image:url(http://planty.local/wp-content/uploads/2024/02/Group-4.png),url(http://planty.local/wp-content/uploads/2024/02/Group-3.png) ;
     background-repeat: no-repeat;
-    background-position:center left 30% ,center right 27%;
+    background-position:center left 31% ,center right 28%;
     background-size: 30%;
     display: flex;
     border-bottom-left-radius: 40% 50px !important;
@@ -550,12 +554,26 @@ article.post-5616{
     
 }
 
+.commander, .commander0 a{
+    text-transform: none !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+
+.commander0{
+    margin: 47px 0 29px 0 !important;
+}
+
+
+
 .bouton {
     display: flex;
     justify-content: center;
     padding:45px 0 93px 0 ;
     margin: 0 !important;
+    
 }
+
 
 /***footer***/
 .site-footer{
