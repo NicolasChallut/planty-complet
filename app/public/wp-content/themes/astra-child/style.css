@@ -138,7 +138,7 @@ Updated: 2024-02-01 11:07:01
         margin: 0 !important;
        } 
     
-      .colonnes input ,.colonnes h2 {
+    .colonnes h2 {
         max-width: 320px;
         width: 100%;
       } 
@@ -171,7 +171,7 @@ Updated: 2024-02-01 11:07:01
 
   .colonnes input ,.colonnes h2
    {
-    max-width: 320px;
+    max-width: 320px !important;
   } 
 
   
@@ -187,9 +187,10 @@ Updated: 2024-02-01 11:07:01
     max-width: 320px;
   }
 
-.informations, .livraison
+.colonnes
 {
     max-width: 320px;
+    width: 100%;
 }
 
 }
