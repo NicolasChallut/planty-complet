@@ -426,6 +426,10 @@ span.wpcf7-spinner{
     width: 100%;
 }
 
+.contact span{
+    margin-top: 15px;
+}
+
 .message{
     background-repeat: no-repeat;
     overflow: visible !important;
@@ -512,6 +516,9 @@ article.post-5616{
     justify-content: center;
     width: 192.533px !important;   
 }
+.width{
+    margin: 19px 0 53px 0 !important;
+}
 
 #colonnes{
     max-width: 860px;
@@ -540,6 +547,7 @@ article.post-5616{
 
 .colonnes h2{
     font-size: 30px;
+    margin-bottom: 0;
 }
 
 .colonnes input{
@@ -563,6 +571,10 @@ article.post-5616{
     justify-content: flex-end;
     height: 447px;
     
+}
+
+.colonnes input{
+    margin-top: 13px !important;
 }
 
 .commander, .commander0 a{
