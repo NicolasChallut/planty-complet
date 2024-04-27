@@ -67,6 +67,10 @@ Updated: 2024-02-01 11:07:01
         margin:30px 0 20px 0 !important;
     }
 
+    .livraison{
+        height: 480px !important;
+    }
+
     .livraison p, .livraison h2
     {
         margin-left: 0 !important;
@@ -100,10 +104,7 @@ Updated: 2024-02-01 11:07:01
         background-size: 15%,100% 100% !important ;
     }
     
-    .avis{
-        height: 100% !important;
-        
-    }
+    
 
     .avis figure{
         width: 100px !important;
@@ -123,6 +124,12 @@ Updated: 2024-02-01 11:07:01
     }
 }
 
+@media screen and (max-width:600px) {
+ .media div{
+    padding-top: 0 !important;
+ }   
+}
+
 @media only screen and (max-width:544px)
 /*mobile*/
 {
@@ -136,8 +143,8 @@ Updated: 2024-02-01 11:07:01
     margin-bottom: 20px;
    } 
 
-    .entete{
-        font-size: medium !important;
+    .entete, .pensent{
+        font-size: 16px !important;
     }
 
     
@@ -169,20 +176,35 @@ Updated: 2024-02-01 11:07:01
 
 }
 
+@media screen and (max-width:442px) {
+
+    .pictures{
+        padding-bottom: 0px !important;
+    }
+
+}
+
 @media screen and (max-width:400px)
 /*smaller screen*/
 {
+
+    .pictures{
+        padding:20px 20px 0 20px !important;
+    }
+
    .Hcommandez {
     font-size: 22px !important;
     margin: 0 !important;
    } 
 
-  .colonnes input ,.colonnes h2
+  .colonnes h2
    {
     max-width: 320px !important;
   } 
 
-  
+  .energie{
+    padding-bottom: 60px !important;
+  }
 
 
   .contact p
@@ -195,10 +217,9 @@ Updated: 2024-02-01 11:07:01
     max-width: 320px;
   }
 
-.colonnes
+.colonnes input
 {
-    max-width: 320px;
-    width: 100%;
+    width: 100% !important;
 }
 
 }
@@ -255,6 +276,8 @@ h1{
     font-weight: 800 !important;
 }
 
+
+
 .drink{
     background-image:url(../../uploads/2024/02/Group-4.png),url(../../uploads/2024/02/Group-3.png) ;
     background-repeat: no-repeat;
@@ -297,17 +320,10 @@ h1{
     justify-content: flex-end;
     width: 100%;
     height: 415px;
-    padding-bottom: 82px !important;
     margin: 0px !important;
     
 }
-/*
-.canette{
-    width: auto;
-    height: 618px;
-    background-color: transparent;
-}
-*/
+
 .avis{
     background-image: url(../../uploads/2024/02/Rectangle-6.png);
     background-repeat: no-repeat;
@@ -315,15 +331,16 @@ h1{
     display: flex;
     flex-flow: row wrap;
     align-content: flex-end;
-    width: 100%;
-    height: 638px;    
+    height: 638px;      
 }
 
 .pensent , .pictures{
     margin: 0 !important;
 }
 
-
+.pictures{
+    max-width: 1170px !important;
+}
 
 .canettes{
     background-color: white;
@@ -372,8 +389,11 @@ h1{
 .organigramme{
     display: flex !important;
     justify-content: space-evenly;
-    margin:0 !important;
-    padding-bottom: 81px !important;   
+    margin:0 !important;   
+}
+
+.titreh2{
+    padding:134px 0 54px 0;
 }
 
 /*formulaire contact*/
@@ -403,6 +423,10 @@ span.wpcf7-spinner{
     width: 0;
     margin:0;
 }
+
+.contactez{
+    padding: 10px;
+}
 /*formulaire contact*/
 
 
@@ -428,6 +452,10 @@ span.wpcf7-spinner{
 
 .contact span{
     margin-top: 15px;
+}
+
+ label{
+    font-size: 20px; ;
 }
 
 .message{
@@ -523,6 +551,7 @@ article.post-5616{
 #colonnes{
     max-width: 860px;
     width: 100%;
+    
 }
 
 .colonnes{
@@ -531,6 +560,7 @@ article.post-5616{
     justify-content: center;
     margin: 0 !important;
     width: 100%;
+    
 }
 
 .informations p{
@@ -552,7 +582,8 @@ article.post-5616{
 
 .colonnes input{
     height: 71px;
-    width: 383px !important;
+    width: 383px ;
+    margin-top: 13px !important;
 }
 
 .informations{
@@ -561,6 +592,7 @@ article.post-5616{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 10px;
     
 
 }
@@ -570,12 +602,9 @@ article.post-5616{
     flex-direction: column;
     justify-content: flex-end;
     height: 447px;
-    
+    padding: 10px;
 }
 
-.colonnes input{
-    margin-top: 13px !important;
-}
 
 .commander, .commander0 a{
     text-transform: none !important;

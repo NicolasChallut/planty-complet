@@ -15,7 +15,7 @@
                  </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-<div class="wrap"><a href="http://planty.local/privacy-policy/">Mentions légales</a>
+<div class="wrap"><a href="../privacy-policy/">Mentions légales</a>
 
 </div><!-- .wrap -->
 
